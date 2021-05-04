@@ -1,6 +1,6 @@
 
-// labb 2 resurser 
-// kurs på udemy The complete node.js developer course
+// labb 2 resources
+// course at udemy The complete node.js developer course
 //
 // labb 2 VG step one understanding the basics 
 // how to create a db via browser or post man also how to add table and then add "items" to table
@@ -82,6 +82,7 @@ app.get('/dancer4', (req, res) => {
     
 })
 
+// getting the information, console logging it
 app.get('/getdancer', (req, res) => {
     let sql = 'SELECT * FROM dancer'
     let query = db.query(sql, (err, results) => {
@@ -97,7 +98,6 @@ app.get('/getdancer', (req, res) => {
 // update dancer thru id params "endpoint"
 app.get('/updatedancer/:id', (req, res) => {
     // here you add what you wanna update about the dancer
-
     let newName = 'New comer'
     let newDesignation = 'the force is stroooong'
     let sql = `UPDATE dancer SET name = '${newName}', designation = '${newDesignation}'WHERE id = ${req.params.id}`
