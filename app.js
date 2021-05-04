@@ -9,7 +9,7 @@ const express = require('express')
 app = express()
 
 const mysql = require('mysql');
-const bodyParser = require('body-parser');
+
 
 // create connection to database
 
@@ -71,7 +71,7 @@ app.get('/dancer3', (req, res) => {
     
 })
 app.get('/dancer4', (req, res) => {
-    let post = {name: 'Mannys butt', designation: 'OG chippendale ala pew pew'}
+    let post = {name: 'Funky Asaparagus', designation: 'OG Swedish locker pew pew'}
     let sql = 'INSERT INTO dancer SET ?'
     let query = db.query(sql, post, err => {
         if (err) {
