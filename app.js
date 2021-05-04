@@ -1,5 +1,5 @@
-// källor för min inlärning
-// https://www.youtube.com/watch?v=YYEC7ydDj4k
+
+// labb 2 resurser 
 // kurs på udemy The complete node.js developer course
 //
 // labb 2 VG step one understanding the basics 
